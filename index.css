@@ -67,7 +67,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.25rem;
 }
@@ -96,7 +96,7 @@ h2 {
 #left-pane {
   width: 35%;
   height: 100%;
-  padding: 1.5rem;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,8 +152,8 @@ h2 {
 #introduction-pane {
   padding-top: 0.25rem;
   text-indent: 2.2rem;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.65rem;
   text-align: justify;
 
   animation: fade-in 0.75s ease-out 0.3s;
@@ -211,7 +211,7 @@ h2 {
 #right-pane {
   width: 65%;
   height: 100%;
-  padding: 1.5rem;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,10 +273,14 @@ h2 {
   align-items: center;
 }
 
-#development-pane .hyperlink {
-  margin: 0 0.25rem;
+#development-pane .link {
+  margin-left: 4px;
+}
+
+#development-pane .link-img {
   width: 1.15rem;
   height: 1.15rem;
+  vertical-align: middle;
 }
 
 #development-pane > .box {
@@ -284,17 +288,16 @@ h2 {
 }
 
 #development-pane > .box > .item {
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 0.5rem 0 0;
 }
 
 #development-pane > .box > .item .item-title {
   margin-bottom: 0.5rem;
   display: inline-flex;
   align-items: center;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.15rem;
-  cursor: pointer;
 }
 
 #development-pane > .box > .item .item-title::before {
@@ -314,11 +317,11 @@ h2 {
 }
 
 #development-pane > .box > .item > .item-content > .sub-item {
-  padding: 0.25rem 0;
+  padding: 0.3rem 0;
   display: flex;
   align-items: start;
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.1rem;
 }
 
 #development-pane > .box > .item > .item-content > .sub-item::before {
@@ -343,7 +346,7 @@ h2 {
 
 #education-pane > .box > .item,
 #contest-pane > .box > .item {
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 0.5rem 0 0;
   display: flex;
   align-items: center;
 }
@@ -382,7 +385,7 @@ h2 {
 }
 
 #contest-pane > .box > .item .item-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
