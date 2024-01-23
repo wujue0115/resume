@@ -15,7 +15,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px solid #fa0; */
 }
 
 @keyframes left-in {
@@ -74,12 +73,12 @@ h2 {
 
 .text-highlight {
   font-weight: bold;
-  border-bottom: 1px solid currentColor;
+  /* border-bottom: 1px solid currentColor; */
+  text-decoration: underline;
+}
 }
 
 #container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +90,8 @@ h2 {
   height: 1122px;
   display: flex;
   background-color: var(--white-color);
-  box-shadow: 0px 0px 10px 3px #fff;
+  /* box-shadow: 0px 0px 10px 3px #fff; */
+  border: 1px solid #fff;
 }
 
 #left-pane {
@@ -291,7 +291,7 @@ h2 {
 }
 
 #development-pane > .box {
-  padding-left: calc(2rem + 2px);
+  padding-left: calc(2rem);
 }
 
 #development-pane > .box > .item {
@@ -299,12 +299,18 @@ h2 {
 }
 
 #development-pane > .box > .item .item-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   display: inline-flex;
   align-items: center;
   font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.15rem;
+
+  & > .item-title-time {
+    margin-left: 0.5em;
+    font-size: 0.7em;
+    opacity: 0.6;
+  }
 }
 
 #development-pane > .box > .item .item-title::before {
@@ -314,21 +320,26 @@ h2 {
   height: 10px;
   background-color: var(--primary-color);
   border-radius: 50%;
-  transform: translateX(calc(-1rem - 1px - 50%));
+  transform: translateX(calc(-1rem - 50%));
 }
 
 #development-pane > .box > .item > .item-content {
-  padding-left: 1.3rem;
+  padding-left: 1rem;
   text-align: justify;
   font-size: 1rem;
 }
 
 #development-pane > .box > .item > .item-content > .sub-item {
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
   display: flex;
   align-items: start;
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.2rem;
+}
+
+#development-pane > .box > .item > .item-content > .sub-item-skill {
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 
 #development-pane > .box > .item > .item-content > .sub-item::before {
@@ -340,7 +351,7 @@ h2 {
   border-radius: 50%;
   background-color: var(--primary-color);
   opacity: 0.6;
-  transform: translateX(calc(-0.5rem - 100%));
+  transform: translateX(calc(-1rem));
 }
 
 #education-pane > .timeline {
@@ -402,13 +413,17 @@ h2 {
     -webkit-print-color-adjust: exact;
   }
 
+  #resume {
+    border: none;
+  }
+
   @page {
     size: A4 portrait;
     margin: 0;
   }
 }
 
-@media screen and (max-width: 793px), screen and (max-height: 1122px) {
+@media screen and (max-width: 793px) {
   #container {
     display: block;
     justify-content: none;
